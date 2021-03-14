@@ -1,0 +1,41 @@
+.home{
+    p{
+        font-weight: 400;
+    }
+    .sec-1{
+        height: 70vh;
+        background-image: url("../../img/sec1-bg.JPG");
+        background-size: 100% 100%;
+    }
+    .sec-2{
+        p{
+            font-weight: 400;
+        }
+    }
+    .sec-3{
+        padding: 35px 0;
+        background-color: #F3F6FB !important;
+    }
+    .sec-4{
+        background-image: url("../../img/mba-block.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 35px 0;
+        .card{
+            background:#ffffff4d;
+            transition: 1s;
+            i{
+                font-size: 48px;
+            }
+            &:hover{
+                background-color: #0093DD;
+                transition: .5s;
+                i,h2,h4{
+                    color: #fff;
+                }
+                
+            }
+        }
+    }
+}

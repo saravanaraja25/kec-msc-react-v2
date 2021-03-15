@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
-import {NavLink} from 'react-router-dom';
+import {NavLink,Link} from 'react-router-dom';
 import logo1 from '../assets/img/logo1.jpg'
 
 const Header = () => {
@@ -44,15 +44,12 @@ const Header = () => {
                         <Nav className="ml-auto">
                             <NavLink className="nav-link" to="/" exact activeClassName="active"><span>Home</span></NavLink>
                             <NavLink className="nav-link" to="/about" exact activeClassName="active"><span>About</span></NavLink>
+                            <NavDropdown title="Academics" activeClassName="active" id="basic-nav-dropdown">
+                                <Link className="dropdown-item" to="/whymsc" exact><span>Why MSc @ KEC</span></Link>
+                                <Link className="dropdown-item" to="/curriculum" exact><span>Curriculum</span></Link>
+                            </NavDropdown>
                             <NavLink className="nav-link" to="/contact" exact activeClassName="active"><span>Contact</span></NavLink>
-                            <NavLink className="nav-link" to="/admission" exact activeClassName="active"><span>Admission</span></NavLink>
-                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown> */}
+                            <NavLink className="nav-link" to="/admission" exact activeClassName="active"><span>Admission</span></NavLink>                            
                         </Nav>
                     </Navbar.Collapse>
                 </div>

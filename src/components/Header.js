@@ -1,9 +1,10 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
-import {NavLink,Link} from 'react-router-dom';
+import {NavLink,Link,useLocation } from 'react-router-dom';
 import logo1 from '../assets/img/logo1.jpg'
 
 const Header = () => {
+    const location = useLocation();
     const [scrolled,setScrolled]=React.useState(false);
     const handleScroll=() => {
         const offset=window.scrollY;
@@ -36,7 +37,7 @@ const Header = () => {
                     <img src={logo1} alt="" />
                     <div className="d-block p-3">
                         <h5 className="text-dark">Kongu Engineering College</h5>
-                        <h6 className="text-dark">Department of CT-PG</h6>
+                        <h6 className="text-dark">M.Sc Software Systems (5 Years)</h6>
                     </div>
                 </NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,9 +45,10 @@ const Header = () => {
                         <Nav className="ml-auto">
                             <NavLink className="nav-link" to="/" exact activeClassName="active"><span>Home</span></NavLink>
                             <NavLink className="nav-link" to="/about" exact activeClassName="active"><span>About</span></NavLink>
-                            <NavDropdown title="Academics" activeClassName="active" id="basic-nav-dropdown">
+                            <NavDropdown title="Academics" className={"" +(((location.pathname==='/placement')||(location.pathname==='/whymsc')||(location.pathname==='/curriculum')) ? 'activedrop' : '')} id="basic-nav-dropdown">
                                 <Link className="dropdown-item" to="/whymsc" exact><span>Why MSc @ KEC</span></Link>
                                 <Link className="dropdown-item" to="/curriculum" exact><span>Curriculum</span></Link>
+                                <Link className="dropdown-item" to="/placement" exact><span>Placements</span></Link>
                             </NavDropdown>
                             <NavLink className="nav-link" to="/contact" exact activeClassName="active"><span>Contact</span></NavLink>
                             <NavLink className="nav-link" to="/admission" exact activeClassName="active"><span>Admission</span></NavLink>                            

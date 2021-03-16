@@ -38,6 +38,7 @@ function App() {
           <Route path="/curriculum" component={Curriculum} exact />
           <Route path="/placement" component={Placement} exact />
           <Route path="/admission" component={Admission} exact />
+
         </Switch>
         <Footer />
       </ScrollToTop>

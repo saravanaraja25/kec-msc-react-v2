@@ -2,8 +2,8 @@ import React from 'react'
 
 const Whymsc = () => {
     return (
-        <div className="whymsc">
-            <div className="breadcrumb py-5 mb-3">
+        <div data-aos="fade-up" className="whymsc">
+            <div  className="breadcrumb py-5 mb-3">
                 <div className="container">
                     <div className="row text-white">
                         <div className="col-6">

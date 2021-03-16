@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <div  data-aos="fade-up" className="contact">
             <div className="breadcrumb py-5 mb-3">
                 <div className="container">
                     <div className="row text-white">

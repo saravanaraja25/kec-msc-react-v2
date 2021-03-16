@@ -7,7 +7,7 @@ const About = () => {
     const [faculty]=useState(faculties());
     return (
         <div className="about">
-            <div className="breadcrumb py-5 mb-3">
+            <div data-aos="fade-up" className="breadcrumb py-5 mb-3">
                 <div className="container">
                     <div className="row text-white">
                         <div className="col-6">
@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="sec-1 mt-5">
+            <div data-aos="fade-right" className="sec-1 mt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 pt-0 px-5 pb-5 ">
@@ -38,7 +38,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="sec-2 mt-2">
+            <div data-aos="fade-down"  className="sec-2 mt-2">
                 <div className="container d-md-block d-none">
                     <h3 className="text-center">Highlights</h3>
                     <hr className="mb-5" />
@@ -104,7 +104,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="sec-3 mt-5">
+            <div data-aos="fade-down-right" className="sec-3 mt-5">
                 <div className="container">
                     <h3 className="text-center">HOD Profile</h3>
                     <hr className="mb-5" />

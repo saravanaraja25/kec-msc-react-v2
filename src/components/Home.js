@@ -8,6 +8,8 @@ import tcs from '../assets/img/tcs-logo.png'
 import coda from '../assets/img/coda-logo.png'
 import firstqa from '../assets/img/firstqa-logo.svg'
 import cts from '../assets/img/cts-logo.svg'
+import {Card,CardColumns} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -19,10 +21,44 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Home = () => {
     return (
         <div className="home">
-            <div className="sec-1 py-5">
-                <div className="container">
-                    Hello
+            <div data-aos="fade-up" className="sec-1 py-5">
+                <div className="sec1-1 p-0 m-0">
                 </div>
+    
+                <div className="text-center text-white mt-5 mb-4">
+                    <h1>Department of CT-PG</h1>
+                    <h2 className="mt-3">M.Sc Software Systems (5 Years Integrated)</h2>
+                    <h2 className="mt-3">Eligibility : HSC</h2>
+                </div>
+                <div className="container">
+                    <CardColumns>
+                        <Card className="c1">
+                            <Card.Body>
+                                <Card.Title>About Us</Card.Title>
+                                <Card.Text>
+                                    <Link to="/about" exact >Click Here To View</Link>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        <Card className="c2">
+                            <Card.Body>
+                                <Card.Title>Curriculum</Card.Title>
+                                <Card.Text>
+                                    <Link to="/curriculum" exact >Click Here To View</Link>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        <Card className="c3">
+                            <Card.Body>
+                                <Card.Title>Placements</Card.Title>
+                                <Card.Text>
+                                    <Link to="/placement" exact >Click Here To View</Link>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </CardColumns>
+                </div>
+
             </div>
             <div data-aos="fade-up" className="sec-2 mt-4">
                 <div className="container">
@@ -135,8 +171,8 @@ const Home = () => {
                     </Swiper>
                 </div>
             </div>
-            <div data-aos="fade-in-up" className="sec-6 mb-4">
-                <div className="container">
+            <div data-aos="fade-in-up" className="sec-6">
+                <div className="container mb-5">
                     <h3 className="text-center">Our Recruiters</h3>
                     <hr className="text-center mb-5"/>
                     <Swiper

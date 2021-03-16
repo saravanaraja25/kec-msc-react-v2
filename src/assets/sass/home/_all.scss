@@ -3,9 +3,48 @@
         font-weight: 400;
     }
     .sec-1{
-        height: 70vh;
-        background-image: url("../../img/sec1-bg.JPG");
-        background-size: 100% 100%;
+        position: relative;
+        height:100%;
+        h1,h2{
+            color: white;
+        }
+        .c1{
+            background-color: rgba(0, 148, 52, 0.85);
+            color: white;
+        }
+        .c2{
+            background-color: rgba(245, 155, 0, 0.85);
+            color: white;
+        }
+        .c3{
+            background-color: rgba(0,147,221,0.85);
+            color: white;
+        }
+        a{
+            color: white;
+            font-weight: 400;
+        }
+    }
+    .sec1-1{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../../img/bg.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;        
+        &::before{
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: #00000040;
+        }
     }
     .sec-2{
         p{

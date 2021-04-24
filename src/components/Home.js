@@ -15,12 +15,15 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import Poster from './Poster';
+import post from '../assets/img/poster.jpeg'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const Home = () => {
     return (
         <div className="home">
+            <Poster src={post}/>
             <div data-aos="fade-up" className="sec-1 py-5">
                 <div className="sec1-1 p-0 m-0">
                 </div>

@@ -29,7 +29,7 @@ const Contact = () => {
                         <div data-aos="flip-left" className=" mb-2 col-lg-4 col-md-6 mb-4 mb-md-0">
                             <i className="fas fa-phone fa-2x blue-text"></i>
                             <p className="font-weight-bold my-3">Phone number</p>
-                            <p className="text-muted"> +91 9443942365</p>
+                            <p className="text-muted"> +91 9443942365 (HOD)</p>
                         </div>
                         <div data-aos="flip-left" className="mb-2 col-lg-4 col-md-6 mb-4 mb-md-0">
                             <i className="fas fa-envelope fa-2x blue-text"></i>

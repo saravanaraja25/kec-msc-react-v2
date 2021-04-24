@@ -37,3 +37,11 @@ body{
         }
     }
 }
+.gallery{
+    img{
+        &:hover{
+            cursor: pointer;
+        }        
+        max-width: 250px;
+    }
+}

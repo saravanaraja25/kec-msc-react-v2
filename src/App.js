@@ -15,6 +15,7 @@ import Whymsc from "./components/Whymsc";
 import Curriculum from "./components/Curriculum";
 import Placement from "./components/Placement";
 import Admission from "./components/Admission";
+import Gallery from "./components/Gallery";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -38,7 +39,7 @@ function App() {
           <Route path="/curriculum" component={Curriculum} exact />
           <Route path="/placement" component={Placement} exact />
           <Route path="/admission" component={Admission} exact />
-
+          <Route path="/gallery" component={Gallery} exact />
         </Switch>
         <Footer />
       </ScrollToTop>

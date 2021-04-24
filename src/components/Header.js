@@ -46,6 +46,7 @@ const Header = () => {
                         <Nav className="ml-auto">
                             <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/" exact activeClassName="active"><span>Home</span></NavLink>
                             <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/about" exact activeClassName="active"><span>About</span></NavLink>                            
+                            <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/gallery" exact activeClassName="active"><span>Gallery</span></NavLink>                            
                             <NavDropdown title="Academics"  className={"" +(((location.pathname==='/placement')||(location.pathname==='/whymsc')||(location.pathname==='/curriculum')) ? 'activedrop' : '')} id="basic-nav-dropdown">
                                 <NavDropdown.Item className="p-0"><Link onClick={()=>setExpanded(false)} className="dropdown-item" to="/whymsc" exact><span>Why MSc @ KEC</span></Link></NavDropdown.Item>
                                 <NavDropdown.Item className="p-0"><Link onClick={()=>setExpanded(false)} className="dropdown-item" to="/curriculum" exact><span>Curriculum</span></Link></NavDropdown.Item>

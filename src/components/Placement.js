@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import {Button,Modal} from 'react-bootstrap'
+import Poster from './Poster';
+import post from '../assets/img/poster.jpeg'
 const Placement = () => {
     const [showp2019, setShowp2019] = useState(false);
     const [showp2020, setShowp2020] = useState(false);
@@ -21,6 +23,7 @@ const Placement = () => {
     // const handleShowcv2021 = () => setShowcv2021(true);
     return (
         <div data-aos="fade-up" className="placement mb-5">
+            <Poster src={post}/>
             <div className="breadcrumb py-5 mb-3">
                 <div className="container">
                     <div className="row text-white">

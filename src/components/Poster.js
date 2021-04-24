@@ -8,8 +8,7 @@ const Poster = ({src}) => {
             <Modal
                 show={show}
                 onHide={() => setShow(false)}
-                dialogClassName="modal-90w w-100"
-                aria-labelledby="example-custom-modal-styling-title"
+                size="lg"
             >
                 <Modal.Header closeButton>
                 </Modal.Header>

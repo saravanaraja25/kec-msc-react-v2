@@ -33,8 +33,9 @@ const Whymsc = () => {
                             <li>Placement training and carrier guidance from the first year</li>
                             <li>Chance to take up consultancy( Software development work) as a part of project work.</li>
                             <li>Well qualified and dedicated faculty members with world class infrastructure</li>
-                            <li>Possibility to learn one credit and value added courses</li>
+                            <li>Possibility to learn one credit, value added, NPTEL and online courses</li>
                             <li>Excellent support for extra and co-curricular activities</li>
+                            {/* <li>Possibility to learn One-Credit / Value Added / NPTEL Online Courses</li> */}
                         </ul>
                     </div>
                 </div>

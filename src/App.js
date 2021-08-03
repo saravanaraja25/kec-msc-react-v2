@@ -38,7 +38,7 @@ function App() {
           <Route path="/whymsc" component={Whymsc} exact />
           <Route path="/curriculum" component={Curriculum} exact />
           <Route path="/placement" component={Placement} exact />
-          <Route path="/admission" component={Admission} exact />
+          {/*<Route path="/admission" component={Admission} exact />*/}
           <Route path="/gallery" component={Gallery} exact />
         </Switch>
         <Footer />

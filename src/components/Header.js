@@ -21,17 +21,15 @@ const Header = () => {
     })
     return (
         <div className="header">
-            <div className="topbar bg-black text-white-0-5">
+            {/*<div className="topbar bg-black text-white-0-5">
                 <div className="container p-2">
                     <div className="row mr-0">
                         <div className="col-12 text-center">
                             <p className="top-text p-2"><NavLink to="/admission">Admission For 2021 is Open. Click Here</NavLink></p>
                         </div>
-                        {/* <div className="col-md-4"></div>
-                        <div className="col-md-4"></div> */}
                     </div>
                 </div>
-            </div>
+            </div>*/}
             <Navbar collapseOnSelect expanded={expanded} className={"main-navbar " +(scrolled ? 'fixed-top' : '')} bg="white" expand="lg">
                 <div className="container">
                 <NavLink to="/" onClick={()=>setExpanded(false)} exact className="navbar-brand d-flex">
@@ -53,7 +51,7 @@ const Header = () => {
                             </NavDropdown>
                             <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/gallery" exact activeClassName="active"><span>Gallery</span></NavLink>                            
                             <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/contact" exact activeClassName="active"><span>Contact</span></NavLink>
-                            <NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/admission" exact activeClassName="active"><span>Admission</span></NavLink>                            
+                            {/*<NavLink className="nav-link" onClick={()=>setExpanded(false)} to="/admission" exact activeClassName="active"><span>Admission</span></NavLink>*/}                       
                         </Nav>
                     </Navbar.Collapse>
                 </div>
